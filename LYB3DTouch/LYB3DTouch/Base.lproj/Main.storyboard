@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0A8-N9-nuC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ReO-2p-Chh">
+            <objects>
+                <navigationController id="0A8-N9-nuC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="akO-3v-mxe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EuA-1V-965" kind="relationship" relationship="rootViewController" id="Lxc-nv-DYh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00t-Zp-z81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XOx-S9-WY7">
+            <objects>
+                <viewController id="EuA-1V-965" customClass="ViewController" customModule="YHAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VKz-Ye-ScL"/>
+                        <viewControllerLayoutGuide type="bottom" id="B0p-hD-pXt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ah-2M-bDj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="9cW-Z8-PpV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fj0-Mv-gco"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTk-fi-bA7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="132"/>
+        </scene>
+    </scenes>
+</document>
