@@ -1,17 +1,25 @@
-# LYB3DTouch
 ## iOS开发 swift 3dTouch实现 附代码 ##
 
 
 ----------
+
 一、What？
+-------
+
 从iphone6s开始，苹果手机加入了3d touch技术，最简单的理解就是可以读取用户的点击屏幕力度大小，根据力度大小给予不同的反馈。
 ![手机qq的3dtouch截图](http://img.blog.csdn.net/20180123143906592?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWXViYW9Mb3Vpc0xpdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
 ----------
+
 二、how? 实现方式？
+------------
+
 如果静态方式和动态方式同时使用，app默认调用静态方式中的设置。
+
 2.1 静态方式
+--------
+
 在info.plist中直接添加，最多只能显示4个，超过4个只会显示前4个。
 ![这里写图片描述](http://img.blog.csdn.net/20180123145430405?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWXViYW9Mb3Vpc0xpdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -19,6 +27,8 @@
 ![这里写图片描述](http://img.blog.csdn.net/20180123160521691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWXViYW9Mb3Vpc0xpdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 2.2 动态方式
+--------
+
 使用代码注册。
 【代码】
 
@@ -46,7 +56,10 @@ return true
 
 
 ----------
+
 三、app内部3d Touch的使用
+------------------
+
 【步骤1】在需要使用3d Touch的VC中继承UIViewControllerPreviewingDelegate。
 ```
 class ViewController: UIViewController, UIViewControllerPreviewingDelegate {
@@ -120,5 +133,7 @@ return [action1, action3, groupAction]
 ```
 
 四、github代码
+----------
+
 如果本博客对您有帮助，希望可以得到您的赞赏！
 完整代码附上：https://github.com/Liuyubao/LYB3DTouch
